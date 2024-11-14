@@ -75,6 +75,8 @@ public class AuthServiceImpl implements AuthService{
 
     private void authenticate(String username, String password){
         try {
+            System.out.println("Username is " + username);
+            System.out.println("Password is " + password);
             authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(username, password));
 
         }catch (BadCredentialsException e){
