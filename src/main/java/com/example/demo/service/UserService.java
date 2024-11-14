@@ -5,4 +5,7 @@ import com.example.demo.bo.UserResponse;
 
 public interface UserService {
     UserResponse createUser(CreateUserRequest request);
+
+    CreateUserRequest updateUserIno(CreateUserRequest request);
+
 }

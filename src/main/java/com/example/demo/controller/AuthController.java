@@ -48,7 +48,6 @@ public class AuthController {
         if (authenticationResponse == null) {
             status = HttpStatus.BAD_REQUEST;
         }
-
         return new ResponseEntity<>(authenticationResponse, status);
     }
 

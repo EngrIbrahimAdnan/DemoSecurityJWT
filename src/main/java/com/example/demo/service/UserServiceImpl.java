@@ -29,4 +29,10 @@ public class UserServiceImpl implements UserService {
         UserResponse response = new UserResponse(userEntity.getId(), userEntity.getName());
         return response;
     }
+
+    @Override
+    public CreateUserRequest updateUserIno(CreateUserRequest request) {
+        System.out.println(request);
+        return request;
+    }
 }
